@@ -2,26 +2,6 @@
 
 Training machines to play CarRacing 2d from OpenAI GYM by implementing Deep Q Learning/Deep Q Network(DQN) with TensorFlow and Keras as the backend.
 
-### Training Results
-We can see that the scores(time frames elapsed) stop rising after around 500 episodes as well as the rewards. Thus let's terminate the training and evaluate the model using the last three saved weight files `trial_400.h5`, `trial_500.h5`, and `trial_600.h5`.
-<br>
-<img src="resources/training_results.png" width="600px">
-
-#### Training After 400 Episodes
-The model knows it should follow the track to acquire rewards after training 400 episodes, and it also knows how to take short cuts. However, making a sharp right turn still seems difficult to it, which results in getting stuck out of the track.
-<br>
-<img src="resources/trial_400.gif" width="300px">
-
-#### Training After 500 Episodes
-The model can now drive faster and smoother after training 500 episodes with making seldom mistakes.
-<br>
-<img src="resources/trial_500.gif" width="300px">
-
-#### Training After 600 Episodes
-To acquire more rewards greedily, the model has gone bad that learns how to drive recklessly and thus making it going off the track when reaching sharp turns.
-<br>
-<img src="resources/trial_600.gif" width="300px">
-
 ## Usage
 
 ### Keyboard Agent
